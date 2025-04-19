@@ -279,9 +279,6 @@ print("Данные 1:\n\(initialGraph)")
 print("Данные 1:\n\(queryGraph)")
 print("Данные 1:\n\(queryGraph)")
 
-//print("Результат 1:\n\(queryGraph)")
-//print("Результат 2:\n\(simulationEngine)")
-//print("Результат 3:\n\()")
 
 print("Результат 4:\n\(result)")
 
