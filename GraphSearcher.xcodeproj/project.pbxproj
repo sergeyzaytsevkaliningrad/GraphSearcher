@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		12E8D9952DD391BE00569BE2 /* SwiftGraph in Frameworks */ = {isa = PBXBuildFile; productRef = 12E8D9942DD391BE00569BE2 /* SwiftGraph */; };
+		12E8D9982DD3956400569BE2 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 12E8D9972DD3956400569BE2 /* Algorithms */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		12A7DD092DB3E1F2000A5FA6 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12E8D9982DD3956400569BE2 /* Algorithms in Frameworks */,
+				12E8D9952DD391BE00569BE2 /* SwiftGraph in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +84,8 @@
 			);
 			name = GraphSearcher;
 			packageProductDependencies = (
+				12E8D9942DD391BE00569BE2 /* SwiftGraph */,
+				12E8D9972DD3956400569BE2 /* Algorithms */,
 			);
 			productName = GraphSearcher;
 			productReference = 12A7DD0B2DB3E1F2000A5FA6 /* GraphSearcher */;
@@ -106,6 +115,10 @@
 			);
 			mainGroup = 12A7DD022DB3E1F2000A5FA6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				12E8D9932DD391BE00569BE2 /* XCRemoteSwiftPackageReference "SwiftGraph" */,
+				12E8D9962DD3956400569BE2 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 12A7DD0C2DB3E1F2000A5FA6 /* Products */;
 			projectDirPath = "";
@@ -291,6 +304,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		12E8D9932DD391BE00569BE2 /* XCRemoteSwiftPackageReference "SwiftGraph" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/davecom/SwiftGraph.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		12E8D9962DD3956400569BE2 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		12E8D9942DD391BE00569BE2 /* SwiftGraph */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12E8D9932DD391BE00569BE2 /* XCRemoteSwiftPackageReference "SwiftGraph" */;
+			productName = SwiftGraph;
+		};
+		12E8D9972DD3956400569BE2 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 12E8D9962DD3956400569BE2 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 12A7DD032DB3E1F2000A5FA6 /* Project object */;
 }
